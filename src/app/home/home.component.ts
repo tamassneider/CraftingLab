@@ -7,18 +7,19 @@ import {HexItemModel} from '../models/hex-item.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public items: HexItemModel[] ;
+  public itemsFirstRow: HexItemModel[];
+  public itemsSecondRow: HexItemModel[];
 
   constructor() {
     this.addItems();
   }
 
   ngOnInit() {
-    console.log(this.items);
+    console.log(this.itemsFirstRow);
   }
 
   addItems() {
-    this.items = [
+    this.itemsFirstRow = [
       {
         name: 'Első Menüpont',
         description: 'Ez az első menüpont',
@@ -32,28 +33,30 @@ export class HomeComponent implements OnInit {
       {
         name: 'Haramdik Menüpont',
         description: 'Ez a harmadik menüpont',
-        pictureUrl: 'assets/project-image-3.jpg'
+        pictureUrl: 'assets/project-image-1.jpg'
       },
       {
         name: 'Negyedik Menüpont',
         description: 'Ez az negyedik menüpont',
-        pictureUrl: 'assets/project-image-4.jpg'
+        pictureUrl: 'assets/project-image-5.jpg'
       },
+    ];
+    this.itemsSecondRow = [
       {
         name: 'Ötödik Menüpont',
         description: 'Ez az ötödik menüpont',
-        pictureUrl: 'assets/project-image-5.jpg'
+        pictureUrl: 'assets/project-image-3.jpg'
       },
       {
         name: 'Hatodik Menüpont',
         description: 'Ez a hatodik menüpont',
-        pictureUrl: 'assets/project-image-5.jpg'
+        pictureUrl: 'assets/project-image-4.jpg'
       },
       {
         name: 'Hetedik Menüpont',
         description: 'Ez a hetedik menüpont',
-        pictureUrl: 'assets/project-image-3.jpg'
+        pictureUrl: 'assets/project-image-5.jpg'
       },
-    ];
+    ]
   }
 }

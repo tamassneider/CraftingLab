@@ -99,14 +99,8 @@
     width: 20%;    /* = (100-2) / 3 */
     padding-bottom: 23.0940%;    /* =  width / sin(60) */
   }
-  .hex:nth-child(4) {
-    clear: left;
-  }
-  .hex:nth-child(5),
-  .hex:nth-child(6),
-  .hex:nth-child(7) {
+  .hexGrid2{
     margin-top: -6%;
-    transform: rotate(-60deg) skewY(30deg);
   }
 }
 
@@ -115,11 +109,29 @@
     width: 49.5%;    /* = (100-1) / 2 */
     padding-bottom: 57.158%;    /* =  width / sin(60) */
     float: left;
+    visibility: visible;
   }
   .hexGrid {
     font-size: 13px;
+    padding-right: 18%;
   }
+  .hex:nth-child(3),
   .hex:nth-child(4),
+  .hex:nth-child(6){
+    transform: translate(50%) rotate(-60deg) skewY(30deg);
+  }
+  .hex:nth-child(3),
+  .hex:nth-child(4),
+  .hex:nth-child(5),
+  .hex:nth-child(6),
+  .hex:nth-child(7) {
+    margin-top: -12%;
+  }
+  .hexGrid2 {
+    position: relative;
+    transform: translateY(-33px);
+  }
+/*  .hex:nth-child(4),
   .hex:nth-child(7) {
     clear: both;
   }
@@ -134,7 +146,7 @@
   .hex:nth-child(6),
   .hex:nth-child(7) {
     margin-top: -12%;
-  }
+  }*/
 
 
 }
