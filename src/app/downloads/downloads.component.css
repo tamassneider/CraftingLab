@@ -1,0 +1,10 @@
+.downloads-img {
+  width: 20%;
+  display:inline-block;
+  float: left
+}
+.downloads-text {
+  width: 70%;
+  display:inline-block;
+  float: right;
+}
