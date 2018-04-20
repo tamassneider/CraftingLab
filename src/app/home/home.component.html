@@ -2,7 +2,7 @@
   <div class="col-12">
     <div class="hexGrid">
       <div class="hex" *ngFor="let item of itemsFirstRow">
-        <a class="hexIn" href="#">
+        <a class="hexIn" [routerLink]="item.linkUrl">
           <img [src]="item.pictureUrl" alt="" />
           <h1>{{item.name}}</h1>
           <p>{{item.description}}</p>
@@ -10,7 +10,7 @@
       </div>
       <div class="hexGrid2">
         <div class="hex" *ngFor="let item of itemsSecondRow">
-          <a class="hexIn" href="#">
+          <a class="hexIn" [routerLink]="item.linkUrl">
             <img [src]="item.pictureUrl" alt="" />
             <h1>{{item.name}}</h1>
             <p>{{item.description}}</p>

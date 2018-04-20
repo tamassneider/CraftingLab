@@ -20,41 +20,48 @@ export class HomeComponent implements OnInit {
   addItems() {
     this.itemsFirstRow = [
       {
-        name: 'Első Menüpont',
+        name: 'Scrapping',
         description: 'Ez az első menüpont',
-        pictureUrl: 'assets/project-image-1.jpg'
+        pictureUrl: 'assets/project-image-1.jpg',
+        linkUrl: '../scrapping',
       },
       {
-        name: 'Második Menüpont',
+        name: 'Cardmaking',
         description: 'Ez az második menüpont',
-        pictureUrl: 'assets/project-image-4.jpg'
+        pictureUrl: 'assets/project-image-4.jpg',
+        linkUrl: '../card-making'
       },
       {
-        name: 'Haramdik Menüpont',
+        name: 'Albums',
         description: 'Ez a harmadik menüpont',
-        pictureUrl: 'assets/project-image-1.jpg'
+        pictureUrl: 'assets/project-image-1.jpg',
+        linkUrl: '../albums'
       },
       {
-        name: 'Negyedik Menüpont',
+        name: 'Painting',
         description: 'Ez az negyedik menüpont',
-        pictureUrl: 'assets/project-image-5.jpg'
+        pictureUrl: 'assets/project-image-5.jpg',
+        linkUrl: '../painting'
       },
     ];
     this.itemsSecondRow = [
       {
-        name: 'Ötödik Menüpont',
+        name: 'Decoupage',
         description: 'Ez az ötödik menüpont',
-        pictureUrl: 'assets/project-image-3.jpg'
+        pictureUrl: 'assets/project-image-3.jpg',
+        linkUrl: '../decoupage'
       },
       {
-        name: 'Hatodik Menüpont',
+        name: 'Crochet',
         description: 'Ez a hatodik menüpont',
-        pictureUrl: 'assets/project-image-4.jpg'
+        pictureUrl: 'assets/project-image-4.jpg',
+        linkUrl: '../crochet'
       },
       {
-        name: 'Hetedik Menüpont',
+        name: 'ArtyFacts',
         description: 'Ez a hetedik menüpont',
-        pictureUrl: 'assets/project-image-5.jpg'
+        pictureUrl: 'assets/project-image-5.jpg',
+        linkUrl: '../arty-facts'
       },
     ];
   }
