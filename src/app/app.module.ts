@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarItemComponent } from './navbar/navbar-item/navbar-item.component';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NavbarItemComponent } from './navbar/navbar-item/navbar-item.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

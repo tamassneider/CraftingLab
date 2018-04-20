@@ -1,0 +1,11 @@
+.menu-item {
+  display:block;
+  color: gray;
+  padding: 12px 10px;
+  transition: transform;
+}
+.menu-item:hover{
+  color: rgba(0,128,128, 0.5);
+  text-decoration: none;
+  text-shadow: 1px 1px rgba(0,170,170, 0.5);
+}

@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.itemsFirstRow);
   }
 
   addItems() {
@@ -57,6 +56,6 @@ export class HomeComponent implements OnInit {
         description: 'Ez a hetedik menüpont',
         pictureUrl: 'assets/project-image-5.jpg'
       },
-    ]
+    ];
   }
 }
